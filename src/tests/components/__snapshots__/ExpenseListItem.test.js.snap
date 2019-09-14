@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseListItem correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "background": "gray",
+      "color": "white",
+      "display": "flex",
+      "height": "30px",
+      "justifyContent": "space-between",
+      "margin": "5px",
+      "padding": "0 5px",
+      "width": "500px",
+    }
+  }
+>
+  <span />
+  <span
+    style={
+      Object {
+        "width": "250px",
+      }
+    }
+  >
+    <Link
+      to="/edit/1"
+    >
+      Gum
+    </Link>
+  </span>
+  <span>
+    195
+  </span>
+  <span>
+    0
+  </span>
+</div>
+`;
