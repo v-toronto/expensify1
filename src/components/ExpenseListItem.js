@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import moment from 'moment'
+import numeral from 'numeral'
 
 
 const iStyle = {
@@ -23,8 +25,8 @@ export const ExpenseListItem = ({ id, num, description, amount, createdAt }) => 
     <div style={iStyle}>
       <span>{num}</span>
       <span style={descStyle}><Link to={`/edit/${id}`} >{description}</Link></span>
-      <span>{amount}</span>
-      <span>{createdAt}</span>
+      <span>{numeral(amount).format('$0,0.00')}</span>
+      <span>{moment(createdAt).format('MMMM Do, YYYY')}</span>
     </div>
   )
 }
